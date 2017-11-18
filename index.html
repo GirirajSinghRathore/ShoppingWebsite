@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap Link-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Bootstrap Link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="indexstyle.css" > 
+</head>
+<body>
+<div class=" container-fluid" style="background-color:black ; padding:5px;" >
+ <!--   <div class="row">
+                
+    <div class="col-sm-6" style="margin:5px;"><a href="#"><a href="#"><img src="logo.png"></a></div>
+    <div class="col-sm-6" style="float:right; color:white">
+        
+    </div>
+    </div>-->
+    <div class="row">
+            <div class="col-sm-9" style="margin:0px;"><a href="#"><img src="logo.png"></a></div>
+            <div class="col-sm-3" style="float:right; color:white">
+                    <!-- <div class="row">
+                           <div class="col-sm-2" style="color:white;">Login</div>
+                            <div class="col-sm-2" style="color:white;">Signup</div>
+                            <div class="col-sm-4" style="color:white;">About Us</div>
+                            <div class="col-sm-4" style="color:white;">Contact Us</div>
+
+                    </div>-->
+                    <a href="#"  data-toggle="modal" data-target="#loginModal" >Login</a> &nbsp <a href="#">Signup</a> &nbsp<a href="#"> About Us</a> &nbsp<a href="#"> Contact Us</a>
+            </div>
+            
+    </div> 
+
+<!-- modal-->
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Login </h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                        <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only" for="exampleInputPassword3">Password</label>
+                        <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
+                    </div>
+                    
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel</button>
+                <button onclick="signin()" type="submit" class="btn btn-primary btn-sm">Sign in</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+ <!--modal-->    
+
+</div>
+<div style="background-color:black">
+    <nav class="navbar navbar-inverse"  >
+        <div class="container-fluid">
+    
+        <ul class="nav navbar-nav">
+            <li style="width:100px" class="nav-item active"><a class="nav-link" style="text-align:center" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
+            <li style="width:100px"><a href="#" style="text-align:center">Daily Deal</a></li>
+            <li style="width:100px"><a href="#" style="text-align:center">Sell</a></li>
+        </ul>
+       <!-- <form class="navbar-form navbar-left">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search">
+            <div class="input-group-btn">
+            <button class="btn btn-default" type="submit">
+                <i class="glyphicon glyphicon-search"></i>
+            </button>
+            </div>
+            </div>
+        </form>-->
+        </div>
+    </nav>
+</div> 
+
+<!-- carousal    style="height: 300px;width: 1000px;   " -->
+<div >
+<div style="margin:5px;margin-bottom:14px;">
+<div   class=" container" >
+<div style="border: 2px solid black;" id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+  
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img style="height: 300px;width: 1500px;" src="https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2017/img/Kitchen/XCM_1079692_Manual_1150x323_1077144_us_kitchen_hgg_GWEditorial_home_decor_1150x323_jpg_HGGHOL_GWNOV_EditorialRRCards._CB513617106_.jpg" alt="Los Angeles">
+      </div>
+  
+      <div class="item">
+        <img style="height: 300px;width: 1500px;" src="https://www.smileycat.com/wp-content/uploads/2016/05/bohemiadesign.jpg" alt="Chicago">
+      </div>
+  
+      <div class="item">
+        <img style="height: 300px;width: 1500px;" src="https://images-na.ssl-images-amazon.com/images/G/01/amazonglobal/images/holidays/liabrou_2017-11-07T20-38_ec9686_1080255_us_ags_batch1_camera_en_logo_holiday17_gw_d-bb_440x200._CB493893315_.jpg" alt="New York">
+      </div>
+    </div>
+  
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+</div>
+</div>
+</div>
+
+<!--content-->
+<div class="container">
+  <div class="row">
+      <div class="col-sm-2 ">
+          <div class="itemblock">
+              <div ><img src="https://images-na.ssl-images-amazon.com/images/G/01/kindle/dp/2017/480789745456/XSITE/HD8_ProductTile_Desktop_750x750.jpg" style="width:100px;height:100px;margin-left:30px">
+              </div>
+              <div style="text-align:center;margin-top:10px"><a href="https://www.amazon.com/gp/product/B01J94SWWU/ref=s9_acss_bw_cg_tabcppt_md1_w?pf_rd_m=ATVPDKIKX0DER&pf_rd_s=merchandised-search-3&pf_rd_r=B4MBYBT6SQ60HN73TYVE&pf_rd_t=101&pf_rd_p=8b8a6b65-8c43-40cd-b6af-5758f6b1a8fc&pf_rd_i=6669703011"  >All-New Fire HD 8</a>
+              </div>
+              <div class="container" style="margin-top:10px">
+                    <button type="button" class="btn btn-warning" style="width:60px">Buy</button>
+                    <button type="button" class="btn btn-Danger" style="width:60px;height:35px;font-size:60%">Add to Cart</button>
+              </div>
+          </div>    
+      </div>
+      <div class="col-sm-2 ">
+            <div class="itemblock">
+                <div ><img src="https://images-na.ssl-images-amazon.com/images/I/51+ws33sqEL._AC_US218_.jpg" style="width:100px;height:100px;margin-left:30px">
+                </div>
+                <div style="text-align:center;margin-top:10px"><a href="Coofandy Men's Casual Dress Shirt Button Down Shirts"  >Men's Casual Shirt</a>
+                </div>
+                <div class="container" style="margin-top:10px">
+                      <button type="button" class="btn btn-warning" style="width:60px">Buy</button>
+                      <button type="button" class="btn btn-Danger" style="width:60px;height:35px;font-size:60%">Add to Cart</button>
+                </div>
+            </div>    
+        </div>
+        <div class="col-sm-2 ">
+                <div class="itemblock">
+                    <div ><img src="https://images-na.ssl-images-amazon.com/images/I/61bU8KJtuUL._AC_US218_.jpg" style="width:100px;height:100px;margin-left:30px">
+                    </div>
+                    <div style="text-align:center;margin-top:10px"><a href="https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_atf_electronics_sr_pg1_2?ie=UTF8&adId=A02736983874RVXG35Q0Q&url=https%3A%2F%2Fwww.amazon.com%2FAmazonBasics-Twins-USB-Powered-Computer-Speakers%2Fdp%2FB00GHY5F3K%2Fref%3Dsr_1_2_sspa%3Fs%3Delectronics%26ie%3DUTF8%26qid%3D1510389408%26sr%3D1-2-spons%26keywords%3Dspeakers%26psc%3D1&qualifier=1510389408&id=316435691468876&widgetName=sp_atf"  >Amazonbasics Speakers</a>
+                    </div>
+                    <div class="container" style="margin-top:10px">
+                          <button type="button" class="btn btn-warning" style="width:60px">Buy</button>
+                          <button type="button" class="btn btn-Danger" style="width:60px;height:35px;font-size:60%">Add to Cart</button>
+                    </div>
+                </div>    
+        </div>
+        <div class="col-sm-2 ">
+                <div class="itemblock">
+                    <div ><img src="https://images-na.ssl-images-amazon.com/images/I/41FPEdH-5qL._AC_US218_.jpg" style="width:100px;height:100px;margin-left:30px">
+                    </div>
+                    <div style="text-align:center;margin-top:10px;"><a href="https://www.amazon.com/Crazy-Little-Thing-Harbor-Novel/dp/1612186009/ref=sr_1_1?ie=UTF8&qid=1510389655&sr=8-1&keywords=novel"  >Crazy Little Thing (A...</a>
+                    </div>
+                    <div class="container" style="margin-top:10px">
+                              <button type="button" class="btn btn-warning" style="width:60px">Buy</button>
+                              <button type="button" class="btn btn-Danger" style="width:60px;height:35px;font-size:60%">Add to Cart</button>
+                    </div>
+                    </div>    
+                </div>          
+        <div class="col-sm-2 ">
+                        <div class="itemblock">
+                            <div ><img src="https://images-na.ssl-images-amazon.com/images/I/51GtslQDt8L._AC_US218_.jpg" style="width:100px;height:100px;margin-left:30px">
+                            </div>
+                            <div style="text-align:center;margin-top:10px"><a href="https://www.amazon.com/Honeywell-HT-900-TurboForce-Circulator-Black/dp/B001R1RXUG/ref=sr_1_1?s=appliances&ie=UTF8&qid=1510390314&sr=1-1&keywords=appliances"  >Honeywell HT-900...</a>
+                            </div>
+                            <div class="container" style="margin-top:10px">
+                                  <button type="button" class="btn btn-warning" style="width:60px">Buy</button>
+                                  <button type="button" class="btn btn-Danger" style="width:60px;height:35px;font-size:60%">Add to Cart</button>
+                            </div>
+                        </div>    
+        </div>
+        <div class="col-sm-2 ">
+                            <div class="itemblock">
+                                <div ><img src="https://images-na.ssl-images-amazon.com/images/I/412I6cBamYL._AC_US218_.jpg" style="width:100px;height:100px;margin-left:30px">
+                                </div>
+                                <div style="text-align:center;margin-top:10px"><a href="https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_atf_computers_sr_pg1_1?ie=UTF8&adId=A09193951RMBK2KJMBRHZ&url=https%3A%2F%2Fwww.amazon.com%2FMicrosoft-Surface-Laptop-Intel-256GB%2Fdp%2FB071YSXTDY%2Fref%3Dsr_1_1_sspa%3Fs%3Dpc%26ie%3DUTF8%26qid%3D1510390505%26sr%3D1-1-spons%26keywords%3Dlaptop%26psc%3D1&qualifier=1510390508&id=1117638985106315&widgetName=sp_atf"  >Microsoft Surface..</a>
+                                </div>
+                                <div class="container" style="margin-top:10px">
+                                      <button type="button" class="btn btn-warning" style="width:60px">Buy</button>
+                                      <button type="button" class="btn btn-Danger" style="width:60px;height:35px;font-size:60%">Add to Cart</button>
+                                </div>
+                            </div>    
+        </div>
+                                       
+  </div>
+
+  <!--second column
+  <div class="row">
+        <div class="col-sm-2 ">
+            <div class="itemblock">
+                <div ><img src="#" style="width:100px;height:100px;margin-left:30px">
+                </div>
+                <div style="text-align:center;margin-top:10px"><a href="#"  >All-New Fire HD 8</a>
+                </div>
+                <div class="container" style="margin-top:10px">
+                      <button type="button" class="btn btn-warning" style="width:60px">Buy</button>
+                      <button type="button" class="btn btn-Danger" style="width:60px;height:35px;font-size:60%">Add to Cart</button>
+                </div>
+            </div>    
+        </div>
+        <div class="col-sm-2 ">
+                <div class="itemblock">
+                    <div ><img src="#" style="width:100px;height:100px;margin-left:30px">
+                    </div>
+                    <div style="text-align:center;margin-top:10px"><a href="#"  >All-New Fire HD 8</a>
+                    </div>
+                    <div class="container" style="margin-top:10px">
+                          <button type="button" class="btn btn-warning" style="width:60px">Buy</button>
+                          <button type="button" class="btn btn-Danger" style="width:60px;height:35px;font-size:60%">Add to Cart</button>
+                    </div>
+                </div>    
+        </div>
+        <div class="col-sm-2 ">
+                <div class="itemblock">
+                    <div ><img src="#" style="width:100px;height:100px;margin-left:30px">
+                    </div>
+                    <div style="text-align:center;margin-top:10px"><a href="#"  >All-New Fire HD 8</a>
+                    </div>
+                    <div class="container" style="margin-top:10px">
+                          <button type="button" class="btn btn-warning" style="width:60px">Buy</button>
+                          <button type="button" class="btn btn-Danger" style="width:60px;height:35px;font-size:60%">Add to Cart</button>
+                    </div>
+                </div>    
+        </div>
+        <div class="col-sm-2 ">
+                <div class="itemblock">
+                    <div ><img src="#" style="width:100px;height:100px;margin-left:30px">
+                    </div>
+                    <div style="text-align:center;margin-top:10px"><a href="#"  >All-New Fire HD 8</a>
+                    </div>
+                    <div class="container" style="margin-top:10px">
+                          <button type="button" class="btn btn-warning" style="width:60px">Buy</button>
+                          <button type="button" class="btn btn-Danger" style="width:60px;height:35px;font-size:60%">Add to Cart</button>
+                    </div>
+                </div>    
+        </div>
+        <div class="col-sm-2 ">
+                <div class="itemblock">
+                    <div ><img src="#" style="width:100px;height:100px;margin-left:30px">
+                    </div>
+                    <div style="text-align:center;margin-top:10px"><a href="#"  >All-New Fire HD 8</a>
+                    </div>
+                    <div class="container" style="margin-top:10px">
+                          <button type="button" class="btn btn-warning" style="width:60px">Buy</button>
+                          <button type="button" class="btn btn-Danger" style="width:60px;height:35px;font-size:60%">Add to Cart</button>
+                    </div>
+                </div>    
+        </div>
+        <div class="col-sm-2 ">
+                <div class="itemblock">
+                    <div ><img src="#" style="width:100px;height:100px;margin-left:30px">
+                    </div>
+                    <div style="text-align:center;margin-top:10px"><a href="#"  >All-New Fire HD 8</a>
+                    </div>
+                    <div class="container" style="margin-top:10px">
+                          <button type="button" class="btn btn-warning" style="width:60px">Buy</button>
+                          <button type="button" class="btn btn-Danger" style="width:60px;height:35px;font-size:60%">Add to Cart</button>
+                    </div>
+                </div>    
+        </div>                                 
+    </div>
+     second column-->
+     <div class="row">
+        <div class="col-sm-2 ">
+            <div class="itemblock">
+                <div ><img src="https://images-na.ssl-images-amazon.com/images/G/01/kindle/dp/2017/480789745456/XSITE/HD8_ProductTile_Desktop_750x750.jpg" style="width:100px;height:100px;margin-left:30px">
+                </div>
+                <div style="text-align:center;margin-top:10px"><a href="https://www.amazon.com/gp/product/B01J94SWWU/ref=s9_acss_bw_cg_tabcppt_md1_w?pf_rd_m=ATVPDKIKX0DER&pf_rd_s=merchandised-search-3&pf_rd_r=B4MBYBT6SQ60HN73TYVE&pf_rd_t=101&pf_rd_p=8b8a6b65-8c43-40cd-b6af-5758f6b1a8fc&pf_rd_i=6669703011"  >All-New Fire HD 8</a>
+                </div>
+                <div class="container" style="margin-top:10px">
+                      <button type="button" class="btn btn-warning" style="width:60px">Buy</button>
+                      <button type="button" class="btn btn-Danger" style="width:60px;height:35px;font-size:60%">Add to Cart</button>
+                </div>
+            </div>    
+        </div>
+        <div class="col-sm-2 ">
+              <div class="itemblock">
+                  <div ><img src="https://images-na.ssl-images-amazon.com/images/I/51+ws33sqEL._AC_US218_.jpg" style="width:100px;height:100px;margin-left:30px">
+                  </div>
+                  <div style="text-align:center;margin-top:10px"><a href="Coofandy Men's Casual Dress Shirt Button Down Shirts"  >Men's Casual Shirt</a>
+                  </div>
+                  <div class="container" style="margin-top:10px">
+                        <button type="button" class="btn btn-warning" style="width:60px">Buy</button>
+                        <button type="button" class="btn btn-Danger" style="width:60px;height:35px;font-size:60%">Add to Cart</button>
+                  </div>
+              </div>    
+          </div>
+          <div class="col-sm-2 ">
+                  <div class="itemblock">
+                      <div ><img src="https://images-na.ssl-images-amazon.com/images/I/61bU8KJtuUL._AC_US218_.jpg" style="width:100px;height:100px;margin-left:30px">
+                      </div>
+                      <div style="text-align:center;margin-top:10px"><a href="https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_atf_electronics_sr_pg1_2?ie=UTF8&adId=A02736983874RVXG35Q0Q&url=https%3A%2F%2Fwww.amazon.com%2FAmazonBasics-Twins-USB-Powered-Computer-Speakers%2Fdp%2FB00GHY5F3K%2Fref%3Dsr_1_2_sspa%3Fs%3Delectronics%26ie%3DUTF8%26qid%3D1510389408%26sr%3D1-2-spons%26keywords%3Dspeakers%26psc%3D1&qualifier=1510389408&id=316435691468876&widgetName=sp_atf"  >Amazonbasics Speakers</a>
+                      </div>
+                      <div class="container" style="margin-top:10px">
+                            <button type="button" class="btn btn-warning" style="width:60px">Buy</button>
+                            <button type="button" class="btn btn-Danger" style="width:60px;height:35px;font-size:60%">Add to Cart</button>
+                      </div>
+                  </div>    
+          </div>
+          <div class="col-sm-2 ">
+                  <div class="itemblock">
+                      <div ><img src="https://images-na.ssl-images-amazon.com/images/I/41FPEdH-5qL._AC_US218_.jpg" style="width:100px;height:100px;margin-left:30px">
+                      </div>
+                      <div style="text-align:center;margin-top:10px;"><a href="https://www.amazon.com/Crazy-Little-Thing-Harbor-Novel/dp/1612186009/ref=sr_1_1?ie=UTF8&qid=1510389655&sr=8-1&keywords=novel"  >Crazy Little Thing (A...</a>
+                      </div>
+                      <div class="container" style="margin-top:10px">
+                                <button type="button" class="btn btn-warning" style="width:60px">Buy</button>
+                                <button type="button" class="btn btn-Danger" style="width:60px;height:35px;font-size:60%">Add to Cart</button>
+                      </div>
+                      </div>    
+                  </div>          
+          <div class="col-sm-2 ">
+                          <div class="itemblock">
+                              <div ><img src="https://images-na.ssl-images-amazon.com/images/I/51GtslQDt8L._AC_US218_.jpg" style="width:100px;height:100px;margin-left:30px">
+                              </div>
+                              <div style="text-align:center;margin-top:10px"><a href="https://www.amazon.com/Honeywell-HT-900-TurboForce-Circulator-Black/dp/B001R1RXUG/ref=sr_1_1?s=appliances&ie=UTF8&qid=1510390314&sr=1-1&keywords=appliances"  >Honeywell HT-900...</a>
+                              </div>
+                              <div class="container" style="margin-top:10px">
+                                    <button type="button" class="btn btn-warning" style="width:60px">Buy</button>
+                                    <button type="button" class="btn btn-Danger" style="width:60px;height:35px;font-size:60%">Add to Cart</button>
+                              </div>
+                          </div>    
+          </div>
+          <div class="col-sm-2 ">
+                              <div class="itemblock">
+                                  <div ><img src="https://images-na.ssl-images-amazon.com/images/I/412I6cBamYL._AC_US218_.jpg" style="width:100px;height:100px;margin-left:30px">
+                                  </div>
+                                  <div style="text-align:center;margin-top:10px"><a href="https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_atf_computers_sr_pg1_1?ie=UTF8&adId=A09193951RMBK2KJMBRHZ&url=https%3A%2F%2Fwww.amazon.com%2FMicrosoft-Surface-Laptop-Intel-256GB%2Fdp%2FB071YSXTDY%2Fref%3Dsr_1_1_sspa%3Fs%3Dpc%26ie%3DUTF8%26qid%3D1510390505%26sr%3D1-1-spons%26keywords%3Dlaptop%26psc%3D1&qualifier=1510390508&id=1117638985106315&widgetName=sp_atf"  >Microsoft Surface..</a>
+                                  </div>
+                                  <div class="container" style="margin-top:10px">
+                                        <button type="button" class="btn btn-warning" style="width:60px">Buy</button>
+                                        <button type="button" class="btn btn-Danger" style="width:60px;height:35px;font-size:60%">Add to Cart</button>
+                                  </div>
+                              </div>    
+          </div>
+                                         
+    </div>
+    <div class="row">
+        <div class="col-sm-2 ">
+            <div class="itemblock">
+                <div ><img src="https://images-na.ssl-images-amazon.com/images/G/01/kindle/dp/2017/480789745456/XSITE/HD8_ProductTile_Desktop_750x750.jpg" style="width:100px;height:100px;margin-left:30px">
+                </div>
+                <div style="text-align:center;margin-top:10px"><a href="https://www.amazon.com/gp/product/B01J94SWWU/ref=s9_acss_bw_cg_tabcppt_md1_w?pf_rd_m=ATVPDKIKX0DER&pf_rd_s=merchandised-search-3&pf_rd_r=B4MBYBT6SQ60HN73TYVE&pf_rd_t=101&pf_rd_p=8b8a6b65-8c43-40cd-b6af-5758f6b1a8fc&pf_rd_i=6669703011"  >All-New Fire HD 8</a>
+                </div>
+                <div class="container" style="margin-top:10px">
+                      <button type="button" class="btn btn-warning" style="width:60px">Buy</button>
+                      <button type="button" class="btn btn-Danger" style="width:60px;height:35px;font-size:60%">Add to Cart</button>
+                </div>
+            </div>    
+        </div>
+        <div class="col-sm-2 ">
+              <div class="itemblock">
+                  <div ><img src="https://images-na.ssl-images-amazon.com/images/I/51+ws33sqEL._AC_US218_.jpg" style="width:100px;height:100px;margin-left:30px">
+                  </div>
+                  <div style="text-align:center;margin-top:10px"><a href="Coofandy Men's Casual Dress Shirt Button Down Shirts"  >Men's Casual Shirt</a>
+                  </div>
+                  <div class="container" style="margin-top:10px">
+                        <button type="button" class="btn btn-warning" style="width:60px">Buy</button>
+                        <button type="button" class="btn btn-Danger" style="width:60px;height:35px;font-size:60%">Add to Cart</button>
+                  </div>
+              </div>    
+          </div>
+          <div class="col-sm-2 ">
+                  <div class="itemblock">
+                      <div ><img src="https://images-na.ssl-images-amazon.com/images/I/61bU8KJtuUL._AC_US218_.jpg" style="width:100px;height:100px;margin-left:30px">
+                      </div>
+                      <div style="text-align:center;margin-top:10px"><a href="https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_atf_electronics_sr_pg1_2?ie=UTF8&adId=A02736983874RVXG35Q0Q&url=https%3A%2F%2Fwww.amazon.com%2FAmazonBasics-Twins-USB-Powered-Computer-Speakers%2Fdp%2FB00GHY5F3K%2Fref%3Dsr_1_2_sspa%3Fs%3Delectronics%26ie%3DUTF8%26qid%3D1510389408%26sr%3D1-2-spons%26keywords%3Dspeakers%26psc%3D1&qualifier=1510389408&id=316435691468876&widgetName=sp_atf"  >Amazonbasics Speakers</a>
+                      </div>
+                      <div class="container" style="margin-top:10px">
+                            <button type="button" class="btn btn-warning" style="width:60px">Buy</button>
+                            <button type="button" class="btn btn-Danger" style="width:60px;height:35px;font-size:60%">Add to Cart</button>
+                      </div>
+                  </div>    
+          </div>
+          <div class="col-sm-2 ">
+                  <div class="itemblock">
+                      <div ><img src="https://images-na.ssl-images-amazon.com/images/I/41FPEdH-5qL._AC_US218_.jpg" style="width:100px;height:100px;margin-left:30px">
+                      </div>
+                      <div style="text-align:center;margin-top:10px;"><a href="https://www.amazon.com/Crazy-Little-Thing-Harbor-Novel/dp/1612186009/ref=sr_1_1?ie=UTF8&qid=1510389655&sr=8-1&keywords=novel"  >Crazy Little Thing (A...</a>
+                      </div>
+                      <div class="container" style="margin-top:10px">
+                                <button type="button" class="btn btn-warning" style="width:60px">Buy</button>
+                                <button type="button" class="btn btn-Danger" style="width:60px;height:35px;font-size:60%">Add to Cart</button>
+                      </div>
+                      </div>    
+                  </div>          
+          <div class="col-sm-2 ">
+                          <div class="itemblock">
+                              <div ><img src="https://images-na.ssl-images-amazon.com/images/I/51GtslQDt8L._AC_US218_.jpg" style="width:100px;height:100px;margin-left:30px">
+                              </div>
+                              <div style="text-align:center;margin-top:10px"><a href="https://www.amazon.com/Honeywell-HT-900-TurboForce-Circulator-Black/dp/B001R1RXUG/ref=sr_1_1?s=appliances&ie=UTF8&qid=1510390314&sr=1-1&keywords=appliances"  >Honeywell HT-900...</a>
+                              </div>
+                              <div class="container" style="margin-top:10px">
+                                    <button type="button" class="btn btn-warning" style="width:60px">Buy</button>
+                                    <button type="button" class="btn btn-Danger" style="width:60px;height:35px;font-size:60%">Add to Cart</button>
+                              </div>
+                          </div>    
+          </div>
+          <div class="col-sm-2 ">
+                              <div class="itemblock">
+                                  <div ><img src="https://images-na.ssl-images-amazon.com/images/I/412I6cBamYL._AC_US218_.jpg" style="width:100px;height:100px;margin-left:30px">
+                                  </div>
+                                  <div style="text-align:center;margin-top:10px"><a href="https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_atf_computers_sr_pg1_1?ie=UTF8&adId=A09193951RMBK2KJMBRHZ&url=https%3A%2F%2Fwww.amazon.com%2FMicrosoft-Surface-Laptop-Intel-256GB%2Fdp%2FB071YSXTDY%2Fref%3Dsr_1_1_sspa%3Fs%3Dpc%26ie%3DUTF8%26qid%3D1510390505%26sr%3D1-1-spons%26keywords%3Dlaptop%26psc%3D1&qualifier=1510390508&id=1117638985106315&widgetName=sp_atf"  >Microsoft Surface..</a>
+                                  </div>
+                                  <div class="container" style="margin-top:10px">
+                                        <button type="button" class="btn btn-warning" style="width:60px">Buy</button>
+                                        <button type="button" class="btn btn-Danger" style="width:60px;height:35px;font-size:60%">Add to Cart</button>
+                                  </div>
+                              </div>    
+          </div>
+                                         
+    </div>
+             
+    
+
+</div>
+
+
+    
+
+<footer class="footer" style="background-color:black" >
+        <div class="container ">
+            <div class="row" >             
+                <div class="col-5 offset-1  col-sm-2">
+                    <h5 style="color:white">Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Daily Deal</a></li>
+                        <li><a href="#">Sell</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-5">
+                    <h5 style="color:white">Our Address</h5>
+                    <address style="color:white">
+                            Mixkart Internet Private Limited Vaishnavi Summit,<br>
+                            No 6/B, 7th Main, 80 Feet Road, 3rd Block, Koramangala, <br>
+                            Bangalore – 560034 India<br>
+                      <i class="fa fa-phone fa-lg"></i>: +1234567890<br>
+                      <i class="fa fa-fax fa-lg"></i>: +0987654321<br>
+                      <i class="fa fa-envelope fa-lg"></i>: 
+                      <a href="mailto:confusion@food.net">MixCart@gmail.net</a>
+		           </address>
+                </div>
+                <div class="col col-sm-4 align-self-center">
+                    <div style="text-align:center;margin-top:50px">
+                        <a class="btn btn-social-icon btn-google-plus" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                        <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
+                    </div>
+                </div>
+           </div>
+           <div style="text-align:center">             
+                <div class="col-auto">
+                    <p>© Copyright 2018 MixCart</p>
+                </div>
+           </div>
+        </div>
+    </footer>
+
+<script>
+    function signin()
+    {   
+        var firstInput = document.getElementById("exampleInputEmail3").value;
+        var secondInput = document.getElementById("exampleInputPassword3").value;
+        var email="abc@xyz.com";
+        var pass="123";
+        //alert(firstInput);
+        var n = firstInput.localeCompare(email);
+        var n1= secondInput.localeCompare(pass);
+        //alert(n);
+
+
+        if(n==0&&n1==0)
+        {
+            alert("Successfully loggedIn");
+            $('.modal.in').modal('hide')
+        }
+        else if(n!=0)
+        {
+            alert("EmailId is Wrong");
+        }
+        else if(n1!=0)
+        {
+            alert("Password is wrong!");
+        }  
+    }
+
+
+</script>        
+
+</body>
+</html>
+

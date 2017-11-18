@@ -1,0 +1,15 @@
+.itemblock
+{
+    background-color:white;
+    margin-top:1px;
+    margin-bottom:4px;
+    padding:2px;
+    border:2px solid black;
+    border-radius: 25px;
+    height:200px;
+}
+.itemimage
+{
+height:2px;
+width: 2px;
+}
